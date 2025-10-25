@@ -1,0 +1,31 @@
+@import "../../_styles/animations.scss";
+@import "../../_styles/mixins";
+.shopPage {
+  &__title {
+    @include soft-shadow-title;
+    @include rotate-text-animation;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+  }
+
+  &__banner {
+    animation: fadeInOut 3s ease forwards;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #e291b7;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    z-index: 1000;
+  }
+}
+
+

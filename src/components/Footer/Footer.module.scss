@@ -1,0 +1,80 @@
+@import "../../_styles/mixins";
+.footer {
+  border-top: 2px solid pink;
+  background: var(--color-background);
+  padding: 2rem;
+  font-family: "Arial", sans-serif;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  &__section {
+    min-width: 150px;
+    @include respond("sm") {
+      min-width: 100px;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 0.5rem;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+
+    svg {
+      cursor: pointer;
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  &__policies {
+    display: flex;
+    gap: 1.5rem;
+
+    span {
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@keyframes rotateText {
+  0% {
+    transform: rotate(5deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+@mixin rotate-text-animation {
+  animation: rotateText 5s linear infinite;
+}
+
+@mixin soft-shadow-title($font-size: 6rem) {
+  font-family: "Cormorant Garamond", serif;
+  font-size: $font-size;
+  color: #d88fa3;
+  margin: 1.5rem;
+  line-height: calc($font-size + 3rem);
+  text-shadow: 0 1px 0 #efefef, 0 2px 0 #efefef, 0 3px 0 #efefef,
+    0 4px 0 #efefef, 0 30px 5px rgba(0, 0, 0, 0.1);
+  @content;
+}
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

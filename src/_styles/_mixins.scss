@@ -1,0 +1,15 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == "sm" {
+    @media (max-width: 390px) {
+      @content;
+    }
+  } @else if $breakpoint== "md" {
+    @media (min-width: 768px) and (max-width: 1023px) {
+      @content;
+    }
+  } @else if $breakpoint== "lg" {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  }
+}

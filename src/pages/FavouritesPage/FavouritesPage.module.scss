@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap");
+@import "../../_styles/animations.scss";
+@import '../../_styles/mixins';
+
+.favourite {
+  &__title {
+    @include soft-shadow-title;
+    @include rotate-text-animation;
+  }
+  &__empty {
+    color: #c5a253;
+    text-align: center;
+    font-size: 3rem;
+    margin: 7rem;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 0 2rem;
+    margin: 2rem auto;
+   
+    
+  }
+  .favourite__list > * {
+    flex: 1 1 260px;
+    max-width: 290px;
+  
+  }
+}

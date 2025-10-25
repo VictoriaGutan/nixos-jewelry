@@ -1,0 +1,83 @@
+@import "../../_styles//mixins";
+.landing {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 2rem;
+  position: relative;
+  &__text {
+    margin-top: 0px;
+  }
+
+  &__title {
+    font-family: var(--font-homePage-title);
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 120px;
+    margin-left: 20px;
+    margin-top: 15px;
+    @include respond("sm") {
+      font-size: 4rem;
+      line-height: 50px;
+    }
+  }
+
+  &__subtitle {
+    font-family: "Great Vibes", cursive;
+    font-size: 2.5rem;
+
+    @include respond("sm") {
+      align-self: center;
+      position: absolute;
+      font-size: 2rem;
+    }
+    @include respond("md") {
+      align-self: center;
+      position: absolute;
+      font-size: 2.5rem;
+    }
+  }
+
+  &__image {
+    width: 500px;
+    height: 95%;
+    margin-right: 30px;
+    transition: transform 0.5s ease;
+    transform: scale(1);
+
+    &:hover {
+      transform: scale(0.9);
+    }
+
+    @include respond("sm") {
+      width: 200px;
+    }
+    @include respond("md") {
+      width: 350px;
+    }
+  }
+
+  &__cta {
+    width: 10rem;
+    height: 4rem;
+    border: 1px solid #d4af37;
+    color: #d4af37;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.4rem;
+    font-family: var(--font-homePage-title);
+    margin: 3rem 2rem;
+    cursor: pointer;
+    @include respond("sm") {
+      font-size: 1.5rem;
+    }
+    &:hover {
+      background: #d4af37;
+      color: white;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 12px rgba(212, 175, 55, 0.4);
+    }
+  }
+}
