@@ -8,8 +8,7 @@
 
   &__list {
     display: flex;
-    justify-content: space-between;
-    margin: 4rem;
+    justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
     padding: 0 1rem;
@@ -17,6 +16,7 @@
 
   &__banner {
     animation: fadeInOut 3s ease forwards;
+    -webkit-animation: fadeInOut 3s ease forwards;
     position: fixed;
     top: 0;
     width: 100%;
@@ -25,7 +25,10 @@
     padding: 1rem;
     text-align: center;
     z-index: 1000;
+    font-size: 3rem;
+  }
+  .shopPage__list > * {
+    flex: 1 1 260px;
+    max-width: 290px;
   }
 }
-
-

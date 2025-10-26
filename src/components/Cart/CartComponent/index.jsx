@@ -55,7 +55,7 @@ const Cart = () => {
           <div className={styles["cart__total"]}>
             Subtotal: {totalPrice}$<div className={styles["cart__line"]}></div>
             <br />
-            Total: {(Number(totalPrice) + 50).toFixed(2)}$
+            Total + Delivery : {(Number(totalPrice) + 50).toFixed(2)}$ 
           </div>
         </>
       )}

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap");
 @import "../../_styles/animations.scss";
-@import '../../_styles/mixins';
+@import "../../_styles/mixins";
 
 .favourite {
   &__title {
@@ -22,12 +22,9 @@
     box-sizing: border-box;
     padding: 0 2rem;
     margin: 2rem auto;
-   
-    
   }
   .favourite__list > * {
     flex: 1 1 260px;
     max-width: 290px;
-  
   }
 }

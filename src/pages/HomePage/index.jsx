@@ -16,7 +16,7 @@ const HomePage = () => {
           </h1>
 
           <span className={styles["landing__subtitle"]}>
-            Discover timeless pieces crafted to perfection
+            Discover timeless pieces - crafted to perfection
           </span>
 
           <br />

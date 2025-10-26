@@ -27,16 +27,20 @@
   &__subtitle {
     font-family: "Great Vibes", cursive;
     font-size: 2.5rem;
-
+    margin: 1rem 1rem;
+    max-width: 35ch;
     @include respond("sm") {
       align-self: center;
       position: absolute;
       font-size: 2rem;
+      margin-top: 8rem;
+      max-width: 35ch;
     }
     @include respond("md") {
       align-self: center;
       position: absolute;
       font-size: 2.5rem;
+      max-width: 100ch;
     }
   }
 
@@ -60,6 +64,8 @@
   }
 
   &__cta {
+    -webkit-appearance: none;
+    appearance: none;
     width: 10rem;
     height: 4rem;
     border: 1px solid #d4af37;
@@ -68,10 +74,13 @@
     font-weight: 700;
     font-size: 1.4rem;
     font-family: var(--font-homePage-title);
-    margin: 3rem 2rem;
+    margin-top: 4rem;
+    margin-left: 1rem;
+    line-height: 1;
     cursor: pointer;
     @include respond("sm") {
       font-size: 1.5rem;
+      margin-top: 10rem;
     }
     &:hover {
       background: #d4af37;
