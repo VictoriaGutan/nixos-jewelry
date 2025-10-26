@@ -58,6 +58,9 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    @include respond('sm'){
+      flex-direction: column;
+    }
   }
   &__amount-input {
     width: 60px;
@@ -65,6 +68,9 @@
     font-size: 16px;
     border-radius: 6px;
     border: 1px solid #ccc;
+    @include respond('sm'){
+      width: 45px;
+    }
   }
   &__remove-button {
     background: #be8389;
@@ -75,5 +81,6 @@
     font-weight: 600;
     cursor: pointer;
     border-radius: 10px;
+  
   }
 }
